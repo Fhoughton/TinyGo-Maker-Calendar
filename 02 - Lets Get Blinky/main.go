@@ -78,21 +78,21 @@ func activity_three() {
 		println(counter) // Print the current counter
 
 		// Red ON
-		red.High()   // ON
-		amber.Low()  // OFF
-		green.Low()  // OFF
+		red.High()                         // ON
+		amber.Low()                        // OFF
+		green.Low()                        // OFF
 		time.Sleep(500 * time.Millisecond) // Wait half a second
 
 		// Amber ON
-		red.Low()    // OFF
-		amber.High() // ON
-		green.Low()  // OFF
+		red.Low()                          // OFF
+		amber.High()                       // ON
+		green.Low()                        // OFF
 		time.Sleep(500 * time.Millisecond) // Wait half a second
 
 		// Green ON
-		red.Low()    // OFF
-		amber.Low()  // OFF
-		green.High() // ON
+		red.Low()                          // OFF
+		amber.Low()                        // OFF
+		green.High()                       // ON
 		time.Sleep(500 * time.Millisecond) // Wait half a second
 
 		counter++ // Increment the counter

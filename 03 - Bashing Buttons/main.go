@@ -79,9 +79,9 @@ func activity_three() {
 			red.Low()    // Red LED off
 
 		} else { // If no buttons are being pressed
-			red.High()   // Red LED on
-			amber.Low()  // Amber LED off
-			green.Low()  // Green LED off
+			red.High()  // Red LED on
+			amber.Low() // Amber LED off
+			green.Low() // Green LED off
 		}
 	}
 }
@@ -104,9 +104,9 @@ func activity_four() {
 		if button1.Get() || button2.Get() { // If button 1 OR button 2 is pressed
 			println("Button 1 or 2 pressed")
 
-			green.High()              // Green LED on
+			green.High()                // Green LED on
 			time.Sleep(2 * time.Second) // Wait for 2 seconds
-			green.Low()               // Green LED off
+			green.Low()                 // Green LED off
 		}
 	}
 }
